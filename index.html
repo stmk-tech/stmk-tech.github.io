@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>STMK | Soluciones Electrónicas</title>
+  <meta name="description" content="STMK es una empresa de electrónica enfocada en calidad, innovación y servicios confiables desde 2020." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      color-scheme: dark;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: "Inter", sans-serif;
+      background:
+        radial-gradient(circle at top, rgba(59,130,246,0.12), transparent 30%),
+        radial-gradient(circle at 80% 10%, rgba(14,165,233,0.08), transparent 22%),
+        #05070c;
+    }
+    .glass {
+      background: rgba(10, 14, 24, 0.72);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+    }
+    .grid-bg {
+      background-image:
+        linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+      background-size: 56px 56px;
+      mask-image: radial-gradient(circle at center, black 20%, transparent 75%);
+      -webkit-mask-image: radial-gradient(circle at center, black 20%, transparent 75%);
+    }
+    .reveal {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity .8s ease, transform .8s ease;
+    }
+    .reveal.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body class="text-white antialiased overflow-x-hidden">
+
+  <!-- Background -->
+  <div class="fixed inset-0 pointer-events-none">
+    <div class="absolute inset-0 grid-bg opacity-60"></div>
+    <div class="absolute -top-40 left-1/2 -translate-x-1/2 w-[42rem] h-[42rem] rounded-full bg-blue-500/10 blur-3xl"></div>
+  </div>
+
+  <!-- NAV -->
+  <header class="relative z-10">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 py-6">
+      <div class="glass border border-white/10 rounded-2xl px-5 py-4 flex items-center justify-between shadow-2xl shadow-black/20">
+        <div>
+          <p class="text-xs tracking-[0.35em] text-sky-300/90 font-semibold">STMK</p>
+          <p class="text-sm text-white/70">Soluciones electrónicas</p>
+        </div>
+        <nav class="hidden md:flex items-center gap-8 text-sm text-white/70">
+          <a href="#sobre" class="hover:text-white transition">Sobre STMK</a>
+          <a href="#servicios" class="hover:text-white transition">Servicios</a>
+          <a href="#enfoque" class="hover:text-white transition">Enfoque</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="relative z-10">
+    <!-- HERO -->
+    <section class="max-w-7xl mx-auto px-6 lg:px-8 pt-10 pb-20 lg:pt-16 lg:pb-28">
+      <div class="grid lg:grid-cols-12 gap-10 items-center">
+        <div class="lg:col-span-7 reveal">
+          <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 bg-white/5 text-sm text-white/75 mb-6">
+            <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+            Operando desde 2020
+          </div>
+
+          <h1 class="text-5xl md:text-7xl font-black tracking-tight leading-[0.95]">
+            Tecnología electrónica
+            <span class="block text-transparent bg-clip-text bg-gradient-to-r from-sky-300 via-white to-sky-200">
+              con estándar profesional.
+            </span>
+          </h1>
+
+          <p class="mt-6 text-lg md:text-xl text-white/70 max-w-2xl leading-relaxed">
+            En STMK desarrollamos soluciones electrónicas con un enfoque claro:
+            ofrecer la mejor calidad posible en cada servicio, con procesos confiables,
+            atención cuidadosa y una experiencia sólida de principio a fin.
+          </p>
+
+          <div class="mt-10 flex flex-wrap gap-4">
+            <a href="#servicios" class="px-6 py-3 rounded-xl bg-white text-black font-semibold hover:bg-white/90 transition shadow-lg shadow-white/10">
+              Ver servicios
+            </a>
+            <a href="#sobre" class="px-6 py-3 rounded-xl border border-white/10 bg-white/5 font-semibold text-white/85 hover:bg-white/10 transition">
+              Conocer STMK
+            </a>
+          </div>
+
+          <div class="mt-10 grid grid-cols-2 md:grid-cols-3 gap-4 max-w-2xl">
+            <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+              <p class="text-3xl font-extrabold stat" data-target="2020">0</p>
+              <p class="text-sm text-white/60 mt-1">Año de inicio</p>
+            </div>
+            <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+              <p class="text-3xl font-extrabold stat" data-target="99">0</p>
+              <p class="text-sm text-white/60 mt-1">Compromiso con la calidad</p>
+            </div>
+            <div class="rounded-2xl border border-white/10 bg-white/5 p-4 col-span-2 md:col-span-1">
+              <p class="text-3xl font-extrabold">24/7</p>
+              <p class="text-sm text-white/60 mt-1">Disponibilidad digital</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5 reveal">
+          <div class="relative">
+            <div class="absolute -inset-4 bg-gradient-to-tr from-sky-500/20 via-blue-500/10 to-transparent blur-2xl"></div>
+            <div class="relative glass border border-white/10 rounded-[2rem] p-6 shadow-2xl shadow-black/30">
+              <div class="flex items-center justify-between mb-6">
+                <div>
+                  <p class="text-xs uppercase tracking-[0.3em] text-white/45">Perfil corporativo</p>
+                  <h2 class="text-2xl font-bold mt-2">STMK Electronics</h2>
+                </div>
+                <div class="w-12 h-12 rounded-2xl bg-sky-400/15 border border-sky-300/20 flex items-center justify-center">
+                  <span class="text-sky-200 font-bold">S</span>
+                </div>
+              </div>
+
+              <div class="space-y-4">
+                <div class="rounded-2xl bg-white/5 border border-white/10 p-4">
+                  <p class="text-sm text-white/55">Misión</p>
+                  <p class="mt-2 text-white/85 leading-relaxed">
+                    Crear servicios electrónicos con una ejecución precisa, materiales confiables y una experiencia consistente.
+                  </p>
+                </div>
+                <div class="rounded-2xl bg-white/5 border border-white/10 p-4">
+                  <p class="text-sm text-white/55">Visión</p>
+                  <p class="mt-2 text-white/85 leading-relaxed">
+                    Ser una marca reconocida por su seriedad, calidad técnica y enfoque de largo plazo.
+                  </p>
+                </div>
+                <div class="rounded-2xl bg-gradient-to-r from-sky-400/10 to-transparent border border-sky-300/15 p-4">
+                  <p class="text-sm text-sky-200/90">Ubicación operativa</p>
+                  <p class="mt-2 text-white/80 leading-relaxed">
+                    Presencia digital y operación orientada a México, con identidad corporativa clara y comunicación profesional.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="max-w-7xl mx-auto px-6 lg:px-8 py-8 lg:py-14">
+      <div class="grid lg:grid-cols-12 gap-8 items-start">
+        <div class="lg:col-span-5 reveal">
+          <p class="text-sky-300 text-sm tracking-[0.35em] uppercase mb-4">Sobre STMK</p>
+          <h2 class="text-3xl md:text-4xl font-bold leading-tight">
+            Una empresa enfocada en resultados, estabilidad y calidad real.
+          </h2>
+        </div>
+
+        <div class="lg:col-span-7 reveal">
+          <div class="glass border border-white/10 rounded-[1.75rem] p-6 md:p-8">
+            <p class="text-white/75 leading-8 text-lg">
+              STMK nació en 2020 con una idea sencilla: construir una empresa de electrónica
+              con estándares serios, comunicación clara y un enfoque obsesivo en la calidad.
+              No buscamos parecer grandes por ruido; buscamos parecerlo por ejecución.
+            </p>
+            <p class="mt-5 text-white/70 leading-8">
+              Nuestro trabajo se centra en ofrecer soluciones confiables, una experiencia visual
+              sólida y una identidad que transmita confianza desde el primer vistazo.
+              Cada detalle de nuestra presencia digital está pensado para reflejar orden, consistencia y profesionalismo.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios" class="max-w-7xl mx-auto px-6 lg:px-8 py-14">
+      <div class="flex items-end justify-between gap-4 mb-8 reveal">
+        <div>
+          <p class="text-sky-300 text-sm tracking-[0.35em] uppercase mb-4">Servicios</p>
+          <h2 class="text-3xl md:text-4xl font-bold">Lo que hacemos</h2>
+        </div>
+        <p class="hidden md:block text-white/50 max-w-xl text-right">
+          Servicios diseñados para tí.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <article class="reveal glass border border-white/10 rounded-[1.75rem] p-6 md:p-7 hover:border-white/20 transition">
+          <div class="w-12 h-12 rounded-2xl bg-sky-400/15 border border-sky-300/15 flex items-center justify-center mb-5">
+            <span class="text-sky-200 font-bold">01</span>
+          </div>
+          <h3 class="text-xl font-semibold">Soluciones electrónicas</h3>
+          <p class="mt-3 text-white/65 leading-7">
+            Desarrollo y configuración de servicios electrónicos con foco en estabilidad, precisión y rendimiento.
+          </p>
+        </article>
+
+        <article class="reveal glass border border-white/10 rounded-[1.75rem] p-6 md:p-7 hover:border-white/20 transition">
+          <div class="w-12 h-12 rounded-2xl bg-sky-400/15 border border-sky-300/15 flex items-center justify-center mb-5">
+            <span class="text-sky-200 font-bold">02</span>
+          </div>
+          <h3 class="text-xl font-semibold">Calidad y control</h3>
+          <p class="mt-3 text-white/65 leading-7">
+            Procesos internos orientados a reducir errores, mantener consistencia y sostener una experiencia confiable.
+          </p>
+        </article>
+
+        <article class="reveal glass border border-white/10 rounded-[1.75rem] p-6 md:p-7 hover:border-white/20 transition">
+          <div class="w-12 h-12 rounded-2xl bg-sky-400/15 border border-sky-300/15 flex items-center justify-center mb-5">
+            <span class="text-sky-200 font-bold">03</span>
+          </div>
+          <h3 class="text-xl font-semibold">Presentación corporativa</h3>
+          <p class="mt-3 text-white/65 leading-7">
+            Identidad visual limpia y profesional, dando una experiencia digital increible.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ENFOQUE -->
+    <section id="enfoque" class="max-w-7xl mx-auto px-6 lg:px-8 py-14 pb-24">
+      <div class="grid lg:grid-cols-12 gap-8">
+        <div class="lg:col-span-4 reveal">
+          <p class="text-sky-300 text-sm tracking-[0.35em] uppercase mb-4">Enfoque</p>
+          <h2 class="text-3xl md:text-4xl font-bold leading-tight">
+            Calidad, confianza y una presencia que se vea legítima.
+          </h2>
+        </div>
+
+        <div class="lg:col-span-8 reveal">
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="glass border border-white/10 rounded-[1.75rem] p-6">
+              <h3 class="font-semibold text-xl">Desde 2020</h3>
+              <p class="mt-3 text-white/65 leading-7">
+                STMK mantiene una trayectoria construida con continuidad, mejora constante y una visión a largo plazo.
+              </p>
+            </div>
+            <div class="glass border border-white/10 rounded-[1.75rem] p-6">
+              <h3 class="font-semibold text-xl">Enfoque profesional</h3>
+              <p class="mt-3 text-white/65 leading-7">
+                Nuestra prioridad es ofrecer una experiencia sólida, clara y confiable en cada punto de contacto digital.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="relative z-10 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 py-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-3 text-sm text-white/45">
+      <p>© 2026 STMK. Todos los derechos reservados.</p>
+      <p>Soluciones electrónicas con enfoque en calidad y profesionalismo.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Reveal on scroll
+    const revealEls = document.querySelectorAll(".reveal");
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) entry.target.classList.add("show");
+      });
+    }, { threshold: 0.15 });
+
+    revealEls.forEach((el) => observer.observe(el));
+
+    // Counter animation
+    const counters = document.querySelectorAll(".stat");
+    const animateCounter = (el) => {
+      const target = parseInt(el.dataset.target, 10);
+      const duration = 1400;
+      const start = 0;
+      const startTime = performance.now();
+
+      const step = (now) => {
+        const progress = Math.min((now - startTime) / duration, 1);
+        const value = Math.floor(start + (target - start) * progress);
+        el.textContent = value.toLocaleString("es-MX");
+        if (progress < 1) requestAnimationFrame(step);
+      };
+
+      requestAnimationFrame(step);
+    };
+
+    counters.forEach(animateCounter);
+  </script>
+</body>
+</html>
